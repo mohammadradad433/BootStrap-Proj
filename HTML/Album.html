@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Album - NovaTech Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="headerbar.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .gallery-img {
+            height: 300px;
+            object-fit: cover;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">NovaTech</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="OurTeam.html">Team</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Album.html">Album</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="text-center mt-5 pt-5 py-5 bg-light">
+    <div class="container">
+        <h1 class="display-5 fw-bold mb-3">Our Album</h1>
+        <p class="lead">Explore our collection of projects, events, and team moments.</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm">
+                    <img src="/img/1-books.png" 
+                         class="card-img-top gallery-img"
+                         data-bs-toggle="modal"
+                         data-bs-target="#imageModal"
+                         onclick="showImage(this.src)">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm">
+                    <img src="/img/img2.webp" 
+                         class="card-img-top gallery-img"
+                         data-bs-toggle="modal"
+                         data-bs-target="#imageModal"
+                         onclick="showImage(this.src)">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img id="modalImage" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function showImage(src) {
+        document.getElementById("modalImage").src = src;
+    }
+</script>
+
+</body>
+</html>

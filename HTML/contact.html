@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - NovaTech Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="headerbar.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            transition: 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .facebook:hover { color: #3b5998; }
+        .instagram:hover { color: #e4405f; }
+        .youtube:hover { color: #ff0000; }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">NovaTech</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="OurTeam.html">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="album.html">Album</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="mt-5 pt-5 py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Contact Us</h1>
+            <p class="text-muted">We would love to hear from you!</p>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6 mb-4">
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-100">
+                        Send Message
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="col-md-4 text-center d-flex flex-column justify-content-center">
+
+                <h5 class="mb-4">Follow Us</h5>
+
+                <div class="social-icons d-flex justify-content-center gap-4">
+                    <a href="https://www.facebook.com" target="_blank" class="facebook text-dark">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com" target="_blank" class="instagram text-dark">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com" target="_blank" class="youtube text-dark">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

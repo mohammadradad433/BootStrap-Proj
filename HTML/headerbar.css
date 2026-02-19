@@ -1,0 +1,14 @@
+    .navbar {
+      background-color: #0058b7 !important;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover, 
+    .navbar .nav-link.active {
+      color: #92abc3 !important;
+    }
